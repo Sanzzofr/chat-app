@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box">
+            <div id="messages"></div>
+            <form id="message-form">
+                <input type="text" id="msg" placeholder="Type a message..." autocomplete="off" required />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="users-list">
+            <h3>Online Users</h3>
+            <ul id="users"></ul>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
